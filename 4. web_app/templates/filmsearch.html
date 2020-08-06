@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Film Search by Description</title>
+<form action="{{ url_for('index_page') }}" method=post>
+    <dl>
+        <dt>Print or insert your description<br>
+        <dd><textarea name='text' rows=10 cols=100>{{ text }}</textarea>
+        <dd><input type=submit value="Submit">
+    </dl>
+</form>
+
+    <dl>
+        <dt>Search result<br>
+        <dd><textarea name=text rows=7 cols=100>{{ prediction_message }}</textarea>
+    </dl>
