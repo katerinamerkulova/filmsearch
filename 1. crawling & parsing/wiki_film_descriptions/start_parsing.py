@@ -25,20 +25,21 @@ def crawl_linkspage(url, common, length, film_titles=[]):
 
 
 def parsing(titles):
+    correct_titles = []
     for title in titles:
         page = wiki.page(title)
         
         for sect in page.sections:
             if sect.title in ('Сюжет', 'Синопсис'):
-                plot = sect.text    # plot
-                summary = page.summary
+                plot = sect.text # plot
+                plot = re.sub('\n', ' ', text)
+                correct_titles.append(title)
 
                 with open('film_plots.txt', 'a', encoding='utf-8') as f:
-                    f.write(plot + '\n&&&\n' )
-                with open('summary.txt', 'a', encoding='utf-8') as f:
-                    f.write(summary + '\n&&&\n' )
+                    f.write(plot + '&&&\n')
                 break
-        
+    with open('wiki_titles.txt', 'w', encoding='utf-8') as f:
+        f.write('\n'.join(correct_titles))
 
 
 def tokenization(texts):
