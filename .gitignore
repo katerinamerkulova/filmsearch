@@ -1,2 +1,5 @@
-.bin
-.pickle
+3. wmdistance/model.bin
+3. tfidf_processing/tfidf.pickle
+3. tfidf_processing/tfidf_matrix.pickle
+4. web_app/tfidf_matrix.pickle
+4. web_app/tfidf.pickle
