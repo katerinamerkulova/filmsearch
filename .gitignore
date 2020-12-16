@@ -1,4 +1,6 @@
 3. wmdistance/model.bin
+3. wmdistance/one_test/mystem.exe
+3. wmdistance/test/mystem.exe
 3. tfidf_processing/tfidf.pickle
 3. tfidf_processing/tfidf_matrix.pickle
 4. web_app/tfidf_matrix.pickle
