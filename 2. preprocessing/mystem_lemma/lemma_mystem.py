@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+# from https://github.com/akutuzov/webvectors/blob/master/preprocessing/rus_preprocessing_mystem.py 
 
 import re
 import requests
@@ -55,4 +55,4 @@ file = open('film_plots_lemma.txt', encoding='utf-8')
 for text in file:
     res = ' '.join(tag_mystem(text=text, mapping=mystem2upos))
     with open('film_plots_lemma_correct.txt',  'a', encoding='utf-8') as file:
-        file.write(res + ' &&&\n')
+        file.write(res + '\n')
