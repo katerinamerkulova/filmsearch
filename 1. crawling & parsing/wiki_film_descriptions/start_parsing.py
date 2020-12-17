@@ -31,12 +31,17 @@ def parsing(titles):
         
         for sect in page.sections:
             if sect.title in ('Сюжет', 'Синопсис'):
-                plot = sect.text # plot
-                plot = re.sub('\n', ' ', text)
-                correct_titles.append(title)
+                if sect.sections:
+                    p = ''
+                    for plot in sect.sections:
+                        p += re.sub(r'Subsections .+:??|Section: .+:??|\n', '', plot.text)
+                else:
+                    p = sect.text # plot
+                    p = re.sub('\n', ' ', text)
+                    correct_titles.append(title)
 
                 with open('film_plots.txt', 'a', encoding='utf-8') as f:
-                    f.write(plot + '&&&\n')
+                    f.write(p)
                 break
     with open('wiki_titles.txt', 'w', encoding='utf-8') as f:
         f.write('\n'.join(correct_titles))
@@ -45,5 +50,5 @@ def parsing(titles):
 def tokenization(texts):
     tokenized_texts = [' '.join(re.findall('\w+', text.lower())) for text in texts]
     with open('tokenized_film_plots.txt', 'w', encoding='utf-8') as f:
-        f.write('\n&&&\n'.join(tokenized_texts))
+        f.write('\n'.join(tokenized_texts))
 
