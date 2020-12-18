@@ -25,6 +25,7 @@ def crawl_linkspage(url, common, length, film_titles=[]):
 
 
 def parsing(titles):
+    titles = sorted(set(titles))
     correct_titles = []
     for title in titles:
         page = wiki.page(title)
@@ -35,13 +36,15 @@ def parsing(titles):
                     p = ''
                     for plot in sect.sections:
                         p += re.sub(r'Subsections .+:??|Section: .+:??|\n', '', plot.text)
+                    if p == '':
+                        break
                 else:
                     p = sect.text # plot
-                    p = re.sub('\n', ' ', text)
+                    p = re.sub('\n', ' ', p)
                     correct_titles.append(title)
 
                 with open('film_plots.txt', 'a', encoding='utf-8') as f:
-                    f.write(p)
+                    f.write(p + '\n')
                 break
     with open('wiki_titles.txt', 'w', encoding='utf-8') as f:
         f.write('\n'.join(correct_titles))
