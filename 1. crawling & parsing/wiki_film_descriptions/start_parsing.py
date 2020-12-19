@@ -25,7 +25,6 @@ def crawl_linkspage(url, common, length, film_titles=[]):
 
 
 def parsing(titles):
-    titles = sorted(set(titles))
     correct_titles = []
     for title in titles:
         page = wiki.page(title)

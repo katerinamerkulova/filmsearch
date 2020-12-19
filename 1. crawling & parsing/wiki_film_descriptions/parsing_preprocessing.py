@@ -1,5 +1,5 @@
 from start_parsing import *
-'''
+
 ##crawling
 # the number of films in wikipedia is 30723 https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A4%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83
 
@@ -38,15 +38,19 @@ tv_titles = crawl_linkspage(url, common, 3657)
 with open('wiki_titles.txt', 'a', encoding='utf-8') as f:
     f.write('\n'+'\n'.join(tv_titles))
 
+titles = open('wiki_titles.txt', encoding='utf-8').readlines()
+with open('wiki_titles.txt', 'w', encoding='utf-8') as f:
+    f.write(''.join(sorted(set(titles))))
+'''
 ## parsing
 #titles = film_titles + car_titles + tv_titles
 with open('wiki_titles.txt', 'w', encoding='utf-8') as f:
     f.write('\n'.join(titles))
-'''
+
 titles = open('wiki_titles.txt', encoding='utf-8').readlines()
 parsing(titles)
 
-'''
+
 ## tokenization
 texts = open('film_plots.txt', encoding='UTF-8').read().split('\n&&&\n')
 tokenization(texts)
