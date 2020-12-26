@@ -3,6 +3,10 @@
 3. word2vec/model.bin
 3. word2vec/one_test/mystem.exe
 3. word2vec/test/mystem.exe
+3. fasttext/model.model
+3. fasttext/model.model.vectors.npy
+3. fasttext/model.model.vectors_ngrams.npy
+3. fasttext/model.model.vectors_vocab.npy
 3. tfidf_processing/tfidf.pickle
 3. tfidf_processing/tfidf_matrix.pickle
 4. web_app/tfidf_matrix.pickle
