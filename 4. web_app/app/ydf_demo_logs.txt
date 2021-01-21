@@ -1,0 +1,28 @@
+<response>
+хей хоп ла ла лей
+similarity = 0.0 film is …По прозвищу «Зверь»
+similarity = 0.0 film is Ящик Пандоры (фильм)
+similarity = 0.0 film is Ящерицы (фильм, 1963)
+similarity = 0.0 film is Ящерица под женской кожей
+similarity = 0.0 film is Яхты в море (фильм, 1955)
+similarity = 0.0 film is Ясь и Янина
+similarity = 0.0 film is Ястребиное гнездо (фильм)
+similarity = 0.0 film is Ясон и аргонавты
+similarity = 0.0 film is Ярость дракона
+similarity = 0.0 film is Ярость (фильм, 2014)
+
+</response>
+<response>
+хей хоп ла ла лей
+similarity = 0.0 film is …По прозвищу «Зверь»
+similarity = 0.0 film is Ящик Пандоры (фильм)
+similarity = 0.0 film is Ящерицы (фильм, 1963)
+similarity = 0.0 film is Ящерица под женской кожей
+similarity = 0.0 film is Яхты в море (фильм, 1955)
+similarity = 0.0 film is Ясь и Янина
+similarity = 0.0 film is Ястребиное гнездо (фильм)
+similarity = 0.0 film is Ясон и аргонавты
+similarity = 0.0 film is Ярость дракона
+similarity = 0.0 film is Ярость (фильм, 2014)
+
+</response>
