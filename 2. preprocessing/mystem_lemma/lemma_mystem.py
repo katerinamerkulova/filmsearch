@@ -7,7 +7,7 @@ import requests
 
 
 '''
-Этот скрипт принимает на вход обработанный русский текст после mystem с флашами -clid в виде {разводить=V=прош,вин,ед,прич,полн,муж,сов,страд,неод|разводить=V=прош,им,ед,прич,полн,муж,сов,страд}{карьерист=S,муж,од=им,ед}{и=CONJ=}
+Этот скрипт принимает на вход обработанный русский текст после mystem с флагами -clid в виде {разводить=V=прош,вин,ед,прич,полн,муж,сов,страд,неод|разводить=V=прош,им,ед,прич,полн,муж,сов,страд}{карьерист=S,муж,од=им,ед}{и=CONJ=}
 На выход подаётся последовательность разделенных пробелами лемм с частями речи 
 ("зеленый_NOUN трамвай_NOUN").
 Их можно непосредственно использовать в моделях с RusVectōrēs (https://rusvectores.org).
@@ -51,8 +51,8 @@ for pair in r.text.split('\n'):
         mystem2upos[pair[0]] = pair[1]
 
 
-file = open('summary_lemma.txt', encoding='utf-8')
+file = open('test_data_lemma.txt', encoding='utf-8')
 for text in file:
     res = ' '.join(tag_mystem(text=text, mapping=mystem2upos))
-    with open('summary_lemma_correct.txt',  'a', encoding='utf-8') as file:
+    with open('test_data_lemma_correct.txt',  'a', encoding='utf-8') as file:
         file.write(res + '\n')
