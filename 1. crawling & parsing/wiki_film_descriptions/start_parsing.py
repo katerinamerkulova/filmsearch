@@ -30,7 +30,8 @@ def parsing(titles):
         page = wiki.page(title)
         
         for sect in page.sections:
-            if sect.title in ('Сюжет', 'Синопсис'):
+            if sect.title in ('Сюжет', 'Синопсис', 'Описание сюжета',
+                              'Описание', 'Общая линия сюжета', 'О фильме', 'Сюжет фильма'):
                 if sect.sections:
                     p = ''
                     for plot in sect.sections:
