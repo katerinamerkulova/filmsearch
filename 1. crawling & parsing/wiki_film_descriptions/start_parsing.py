@@ -28,7 +28,6 @@ def parsing(titles):
     correct_titles = []
     for title in titles:
         page = wiki.page(title)
-        
         for sect in page.sections:
             if sect.title in ('Сюжет', 'Синопсис', 'Описание сюжета',
                               'Описание', 'Общая линия сюжета', 'О фильме', 'Сюжет фильма'):
@@ -45,6 +44,8 @@ def parsing(titles):
 
                 with open('film_plots.txt', 'a', encoding='utf-8') as f:
                     f.write(p + '\n')
+                with open('correct_titles.txt', 'a', encoding='utf-8') as f:
+                    f.write(title + '\n')
                 break
     with open('wiki_titles.txt', 'w', encoding='utf-8') as f:
         f.write('\n'.join(correct_titles))
