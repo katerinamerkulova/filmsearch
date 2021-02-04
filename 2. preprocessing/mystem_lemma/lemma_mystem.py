@@ -51,8 +51,8 @@ for pair in r.text.split('\n'):
         mystem2upos[pair[0]] = pair[1]
 
 
-file = open('film_plots_lemma.txt', encoding='utf-8')
+file = open('test_data_lemma.txt', encoding='utf-8')
 for text in file:
     res = ' '.join(tag_mystem(text=text, mapping=mystem2upos))
-    with open('film_plots_lemma_correct.txt',  'a', encoding='utf-8') as file:
+    with open('test_data_lemma_correct.txt',  'a', encoding='utf-8') as file:
         file.write(res + '\n')
