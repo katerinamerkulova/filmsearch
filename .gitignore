@@ -1,5 +1,5 @@
 2. preprocessing/mystem_lemma/mystem.exe
-2. preprocessing/mystem_lemma/film_plots_lemma.txt
+2. preprocessing/mystem_lemma/film_plots_lemma_correct.txt
 3. word2vec/model.bin
 3. word2vec/one_test/mystem.exe
 3. word2vec/test/mystem.exe
@@ -7,7 +7,7 @@
 3. fasttext/model.model.vectors.npy
 3. fasttext/model.model.vectors_ngrams.npy
 3. fasttext/model.model.vectors_vocab.npy
-3. tfidf_processing/tfidf.pickle
-3. tfidf_processing/tfidf_matrix.pickle
+3. tfidf/tfidf.pickle
+3. tfidf/tfidf_matrix.pickle
 4. web_app/tfidf_matrix.pickle
 4. web_app/tfidf.pickle
