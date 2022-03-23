@@ -1,0 +1,64 @@
+embedding	train size	test size	training time	inference time	recall	MAP
+CountVectorizer	131	100	0.09	0.02	0.61	0.3447
+CountVectorizer	525	100	0.3	0.11	0.43	0.2266
+CountVectorizer	1039	100	0.58	0.26	0.35	0.1745
+CountVectorizer	5000	100	2.12	1.92	0.15	0.0769
+CountVectorizer	10000	100	4.43	2.86	0.11	0.0161
+CountVectorizer	20000	100	7.29	5.67	0.06	0.0081
+CountVectorizer	30000	100	10.63	8.52	0.04	0.0051
+TF-IDF	131	100	0.09	0.01	0.75	0.5151
+TF-IDF	525	100	0.34	0.1	0.61	0.3744
+TF-IDF	1039	100	1.18	0.16	0.51	0.28
+TF-IDF	5000	100	3.34	1.04	0.32	0.133
+TF-IDF	10000	100	5.32	1.64	0.17	0.0252
+TF-IDF	20000	100	9.57	3.16	0.08	0.01
+TF-IDF	30000	100	13.99	4.71	0.04	0.005
+Fasttext	131	100	0.26	0	0.48	0.2242
+Fasttext	525	100	0.87	0	0.226	0.1253
+Fasttext	1039	100	1.65	0	0.166	0.0842
+Fasttext	5000	100	5.06	0	0.082	0.0463
+Fasttext	10000	100	9.47	0	0.063	0.0349
+Fasttext	20000	100	17.91	0	0.045	0.0232
+Fasttext	30000	100	25.79	0	0.033	0.0181
+Word2Vec	131	100	0.13	0	0.62	0.3761
+Word2Vec	525	100	0.48	0	0.356	0.2053
+Word2Vec	1039	100	0.86	0	0.265	0.1512
+Word2Vec	5000	100	2.67	0	0.169	0.0904
+Word2Vec	10000	100	4.98	0	0.117	0.0662
+Word2Vec	20000	100	9.62	0	0.082	0.0483
+Word2Vec	30000	100	14.27	0	0.073	0.0391
+Doc2Vec	131	100	3.07	0	0.1	0.0244
+Doc2Vec	525	100	10.17	0.01	0.06	0.0208
+Doc2Vec	1039	100	20.53	0.01	0.02	0.0034
+Doc2Vec	5000	100	62.97	0.01	0	0
+Doc2Vec	10000	100	118.04	0.01	0	0
+Doc2Vec	20000	100	224.1	0.01	0	0
+Doc2Vec	30000	100	324.51	0.02	0.01	0.0025
+Universal Sentence Encoder	131	100	234.92	0.27	0.36	0.1659
+Universal Sentence Encoder	525	100	748.11	0.28	0.15	0.0688
+Universal Sentence Encoder	1039	100	1434.94	0.28	0.11	0.0352
+Universal Sentence Encoder	5000	100	4487.67	0.28	0.02	0.0034
+Universal Sentence Encoder	10000	100	8342.02	0.29	0	0
+Universal Sentence Encoder	20000	100	15952.3	0.29	0	0
+Universal Sentence Encoder	30000	100	23713.53	0.29	0	0
+Siamese BERT (MiniLM)	131	100	15.94	0.1	0.57	0.3007
+Siamese BERT (MiniLM)	525	100	64.92	0.09	0.35	0.1741
+Siamese BERT (MiniLM)	1039	100	127.36	0.09	0.27	0.1409
+Siamese BERT (MiniLM)	5000	100	575.07	0.09	0.11	0.0449
+Siamese BERT (MiniLM)	10000	100	1182.2	0.12	0.07	0.0383
+Siamese BERT (MiniLM)	20000	100	2470.4	0.09	0.07	0.026
+Siamese BERT (MiniLM)	30000	100	3690.86	0.11	0.04	0.0227
+Siamese BERT (MiniLM) domain adopted	131	100	7.97	0.05	0.35	0.1591
+Siamese BERT (MiniLM) domain adopted	525	100	31.73	0.05	0.17	0.0791
+Siamese BERT (MiniLM) domain adopted	1039	100	63.23	0.06	0.17	0.0679
+Siamese BERT (MiniLM) domain adopted	5000	100	291.83	0.05	0.04	0.023
+Siamese BERT (MiniLM) domain adopted	10000	100	570.54	0.05	0.03	0.0093
+Siamese BERT (MiniLM) domain adopted	20000	100	1132.83	0.05	0.02	0.015
+Siamese BERT (MiniLM) domain adopted	30000	100	1724.62	0.06	0.01	0.01
+Siamese BERT (MiniLM) similarity	131	100	15.33	0.1	0.2	0.0956
+Siamese BERT (MiniLM) similarity	525	100	63.4	0.09	0.07	0.0338
+Siamese BERT (MiniLM) similarity	1039	100	127.88	0.1	0.06	0.0278
+Siamese BERT (MiniLM) similarity	5000	100	567.8	0.1	0.05	0.0247
+Siamese BERT (MiniLM) similarity	10000	100	1124.63	0.11	0.04	0.0233
+Siamese BERT (MiniLM) similarity	20000	100	2503.32	0.09	0.04	0.0228
+Siamese BERT (MiniLM) similarity	30000	100	3527.86	0.1	0.03	0.0217

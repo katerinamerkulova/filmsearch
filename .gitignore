@@ -9,5 +9,11 @@
 3. fasttext/model.model.vectors_vocab.npy
 3. tfidf/tfidf.pickle
 3. tfidf/tfidf_matrix.pickle
+3. COMPARISON/output
+3. COMPARISON/ruwikiruscorpora_upos_cbow_300_10_2021
+3. COMPARISON/tayga_none_fasttextcbow_300_10_2019
+3. COMPARISON/universal-sentence-encoder-multilingual-large_3.tar
+3. COMPARISON/universal-sentence-encoder-multilingual-large_3
 4. web_app/tfidf_matrix.pickle
 4. web_app/tfidf.pickle
+.idea
